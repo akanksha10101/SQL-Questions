@@ -1,0 +1,4 @@
+select address,pd_district,count(incidnt_num) as cn
+from sf_crime_incidents_2014_01
+group by address,pd_district
+order by cn desc;
