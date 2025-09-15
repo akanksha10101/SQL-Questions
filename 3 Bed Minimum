@@ -1,0 +1,11 @@
+SELECT 
+    neighbourhood,
+    AVG(beds) AS avg_beds
+FROM 
+    airbnb_search_details
+GROUP BY 
+    neighbourhood
+HAVING 
+    SUM(beds) >= 3
+ORDER BY 
+    avg_beds DESC;
