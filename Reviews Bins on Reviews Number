@@ -1,0 +1,11 @@
+select id,price,
+case
+when number_of_reviews=0 then 'NO'
+when number_of_reviews>=1 and number_of_reviews<=5 then 'FEW'
+when number_of_reviews>=6 and number_of_reviews<=15 then 'SOME'
+when number_of_reviews>=16 and number_of_reviews<=40 then 'MANY'
+else 'A LOT'
+end 
+as
+category
+from airbnb_search_details;
