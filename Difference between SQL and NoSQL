@@ -1,0 +1,15 @@
+Structure:
+SQL databases are structured and table-based;
+NoSQL databases are typically document, key-value, graph, or wide-column based and are schema-flexible;
+
+Language: 
+SQL uses SQL;
+NoSQL databases use various query languages or APIs.
+
+Scalability: 
+SQL scales vertically; 
+NoSQL scales horizontally.
+
+ACID vs. BASE: 
+SQL databases prioritize ACID compliance;
+NoSQL databases often prioritize availability and partition tolerance (BASE).
