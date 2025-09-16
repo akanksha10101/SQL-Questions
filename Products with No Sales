@@ -1,0 +1,6 @@
+SELECT 
+dp.prod_sku_id, dp.market_name
+FROM dim_product dp
+JOIN fct_customer_sales fc
+  ON dp.prod_sku_id = fc.prod_sku_id
+ and fc.cust_id is NULL;
