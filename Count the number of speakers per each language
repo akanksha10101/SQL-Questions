@@ -1,0 +1,2 @@
+select language,count(*) from playbook_users
+group by language;
