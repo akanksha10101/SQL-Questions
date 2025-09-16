@@ -1,0 +1,5 @@
+SELECT grade
+FROM los_angeles_restaurant_health_inspections
+WHERE LOWER(program_name) LIKE '%bakery%'
+GROUP BY grade
+ORDER BY COUNT(*) DESC;
