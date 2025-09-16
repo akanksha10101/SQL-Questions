@@ -1,0 +1,12 @@
+--What are DDL, DML, DCL, TCL? 
+DDl-Data definition Language
+Create,alter,truncate,drop,rename
+
+DML-Data Manipulation Language
+Insert,delete,update,merge
+
+DCL-Data control language
+Grant, revoke
+
+TCL-Transaction control language
+Commit,rollback,savepoint
