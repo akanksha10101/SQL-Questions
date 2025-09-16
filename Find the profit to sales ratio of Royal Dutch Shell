@@ -1,0 +1,2 @@
+select profits/sales from forbes_global_2010_2014
+where company='Royal Dutch Shell';
