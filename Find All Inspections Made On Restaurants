@@ -1,0 +1,2 @@
+select business_name, inspection_score from sf_restaurant_health_violations
+where lower(business_name) like '%restaurant%';
