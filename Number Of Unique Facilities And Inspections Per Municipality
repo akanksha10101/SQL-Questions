@@ -1,0 +1,4 @@
+select facility_zip,count(*)
+from los_angeles_restaurant_health_inspections
+group by facility_zip
+order by count(*) desc;
