@@ -1,0 +1,3 @@
+select * from forbes_global_2010_2014
+where sector='Financials'
+and continent in ('Europe','Asia');
