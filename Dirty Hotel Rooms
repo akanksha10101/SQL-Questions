@@ -1,0 +1,2 @@
+select * from hotel_reviews
+where lower(negative_review) like '%dirty%';
