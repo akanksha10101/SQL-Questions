@@ -1,0 +1,3 @@
+select inspection_date,business_name,inspection_score 
+from sf_restaurant_health_violations
+where inspection_score<50 ;
