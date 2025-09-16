@@ -1,0 +1,2 @@
+select * from transactions
+where month(transaction_start_date) in (4,5);
