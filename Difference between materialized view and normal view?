@@ -1,0 +1,19 @@
+Data Storage:
+      View:
+      Logical only; no data is stored physically. Only the query definition is saved.
+      Materialized view:
+      Physical data; the results of the query are stored on disk or in physical memory.
+
+Data Freshness:
+      View:
+      Always up-to-date; data is fetched from the original tables in real-time when the view is queried.
+      Materialized view:
+      Stale data; requires a periodic refresh to reflect changes in the underlying tables.
+
+Performance:
+      View:
+      Slower for complex queries, as the query executes every time the view is accessed.
+      Materialized view:
+      Faster for complex queries because the results are precomputed and pre-stored.
+
+
