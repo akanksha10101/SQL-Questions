@@ -1,0 +1,6 @@
+SELECT 
+    FORMAT(started_at, 'yyyy-MM') AS year_month,
+    COUNT(*) AS registrations
+FROM noom_signups
+GROUP BY FORMAT(started_at, 'yyyy-MM')
+ORDER BY year_month;
