@@ -1,0 +1,7 @@
+select 
+account_id,
+1.0 * 
+count(distinct case when record_date between '2021-01-01' and '2021-01-31' then user_id end) /
+nullif(count(distinct case when record_date between '2020-12-01' and '2020-12-31' then user_id en),0) as growth_rate
+from sf_events
+group by account_id
