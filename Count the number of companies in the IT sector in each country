@@ -1,0 +1,5 @@
+select country ,count(company) 
+from forbes_global_2010_2014
+where sector='Information Technology'
+group by country
+order by count(company) desc;
