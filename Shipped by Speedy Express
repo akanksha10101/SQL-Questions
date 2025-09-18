@@ -1,0 +1,5 @@
+SELECT count(order_id)
+FROM shopify_orders so
+INNER JOIN shopify_carriers sc
+    ON so.carrier_id = sc.id
+WHERE sc.name = 'Speedy Express';
