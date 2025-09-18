@@ -1,0 +1,3 @@
+select count(distinct(user_id)) 
+from playbook_users
+where language in ('german','spanish','english','french');
