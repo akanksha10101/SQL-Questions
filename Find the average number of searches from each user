@@ -1,0 +1,3 @@
+select id_user,avg(n_searches) 
+from airbnb_searches
+group by id_user;
