@@ -1,0 +1,2 @@
+select format(time_id,'MM'),client_id, count(distinct user_id) from fact_events
+group by format(time_id,'MM'),client_id;
