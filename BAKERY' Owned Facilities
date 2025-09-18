@@ -1,0 +1,4 @@
+select owner_name,pe_description 
+from los_angeles_restaurant_health_inspections
+where upper(facility_name) like '%BAKERY%'
+and lower(pe_description) like '%low%risk%';
