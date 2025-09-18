@@ -1,0 +1,3 @@
+select session_type,avg(datediff(second,session_start,session_end))from
+twitch_sessions
+group by session_type;
