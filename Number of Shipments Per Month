@@ -1,0 +1,5 @@
+select 
+format(shipment_date,'yyyy-MM'),
+count(distinct concat(shipment_id, '-', sub_id)) as num_shipments
+from amazon_shipment
+group by format(shipment_date,'yyyy-MM');
