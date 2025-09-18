@@ -1,0 +1,4 @@
+select event_name,count(user_id) from playbook_events
+where device='MacBook Pro' 
+group by event_name
+order by count(user_id);
