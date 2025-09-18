@@ -1,0 +1,2 @@
+select teacher,count(student_id) from sat_scores
+group by teacher;
