@@ -1,0 +1,5 @@
+select shipment_id,
+sub_id,
+weight,
+shipment_date,
+sum ( weight ) over (partition by shipment_id )from amazon_shipment;
