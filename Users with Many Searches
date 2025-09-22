@@ -1,0 +1,6 @@
+select user_id,count(search_id)
+from fb_searches
+where  date >= '2021-08-01'
+      AND date < '2021-09-01'
+group by user_id
+having count(search_id)>=5
