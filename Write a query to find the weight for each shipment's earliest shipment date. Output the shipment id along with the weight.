@@ -1,0 +1,2 @@
+select shipment_id,min(shipment_date) from amazon_shipment
+group by shipment_id;
