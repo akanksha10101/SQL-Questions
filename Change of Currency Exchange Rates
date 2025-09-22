@@ -1,0 +1,8 @@
+SELECT
+    source_currency,
+    MAX(CASE WHEN date = '2020-07-01' THEN exchange_rate END) -
+    MAX(CASE WHEN date = '2020-01-01' THEN exchange_rate END) AS rate_change
+FROM sf_exchange_rate
+WHERE date IN ('2020-01-01', '2020-07-01')
+  AND target_currency = 'USD'
+GROUP BY source_currency;
