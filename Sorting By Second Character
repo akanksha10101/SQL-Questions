@@ -1,0 +1,2 @@
+select * from random_id
+order by substring(id,2,1);
