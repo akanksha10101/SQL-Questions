@@ -1,0 +1,4 @@
+select user_id from twitch_sessions
+where session_type in ('streamer','viewer')
+group by user_id
+having count(distinct( session_type ))=2;
