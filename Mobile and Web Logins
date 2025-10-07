@@ -1,0 +1,3 @@
+select log_date,count(distinct(user_id))
+from mobile_logs
+group by log_date;
