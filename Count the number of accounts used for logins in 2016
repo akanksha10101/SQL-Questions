@@ -1,0 +1,2 @@
+select count(account_id) from product_logins
+where format(login_date,'yyyy')='2016';
