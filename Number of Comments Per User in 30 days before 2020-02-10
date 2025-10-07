@@ -1,0 +1,5 @@
+select user_id,sum(number_of_comments) from fb_comments_count
+where created_at BETWEEN '2020-01-11' AND '2020-02-10'
+
+group by user_id 
+having sum(number_of_comments) >0;
