@@ -1,0 +1,8 @@
+--select * from online_orders where date_sold between '2022-Apr-01' and '2022-Apr-30';
+--select * from online_customers where state='Oregon'
+
+select sum(cost_in_dollars) 
+from online_orders oo
+join online_customers oc
+on (oo.customer_id=oc.id)
+where oo.date_sold between '2022-Apr-01' and '2022-Apr-30';
