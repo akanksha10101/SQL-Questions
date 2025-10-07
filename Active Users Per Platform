@@ -1,0 +1,2 @@
+select platform,count(distinct(user_id)) from user_sessions
+group by platform ;
