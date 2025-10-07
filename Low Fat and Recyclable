@@ -1,0 +1,5 @@
+select 
+
+100*count(case when is_low_fat='Y' and  is_recyclable='Y' then 1 end)/
+count(*)
+from facebook_products;
