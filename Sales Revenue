@@ -1,0 +1,2 @@
+select sum(order_total) from amazon_sales
+where format(order_date,'yyyy')='2021';
