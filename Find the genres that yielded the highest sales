@@ -1,0 +1,3 @@
+select genre,sum(total) from global_weekly_charts_2013_2014
+group by genre
+order by sum(total) desc ;
