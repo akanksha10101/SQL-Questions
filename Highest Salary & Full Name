@@ -1,0 +1,2 @@
+select TOP 1 first_name+' '+last_name,salary from worker
+order by salary desc;
