@@ -1,0 +1,3 @@
+select distinct origin from us_flights
+UNION 
+select distinct dest from us_flights;
