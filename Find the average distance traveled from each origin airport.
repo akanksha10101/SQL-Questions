@@ -1,0 +1,2 @@
+select origin,avg(distance) from us_flights
+group by origin;
