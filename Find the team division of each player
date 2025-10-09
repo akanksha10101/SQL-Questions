@@ -1,0 +1,4 @@
+select  p.player_name, t.division
+from college_football_players p
+join college_football_teams t
+on (p.school_name=t.school_name);
