@@ -1,0 +1,2 @@
+select * from facebook_complaints
+where type=1;
