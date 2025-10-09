@@ -1,0 +1,1 @@
+select first_name,charindex('a',first_name) from worker;
