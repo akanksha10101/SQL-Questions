@@ -1,0 +1,2 @@
+select * from facebook_reactions
+where reaction='like';
