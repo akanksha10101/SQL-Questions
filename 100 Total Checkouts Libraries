@@ -1,0 +1,4 @@
+select count(home_library_code) from library_usage
+where total_checkouts>=100
+and circulation_active_month='February'
+and  circulation_active_year='2015';
