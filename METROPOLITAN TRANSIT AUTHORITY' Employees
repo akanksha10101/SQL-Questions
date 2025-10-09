@@ -1,0 +1,2 @@
+select * from sf_public_salaries
+where charindex('METROPOLITAN TRANSIT AUTHORITY',jobtitle)>0;
