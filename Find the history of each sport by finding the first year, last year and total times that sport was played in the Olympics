@@ -1,0 +1,2 @@
+select sport,min(year),max(year),count(id) from olympics_athletes_events
+group by sport;
