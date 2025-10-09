@@ -1,0 +1,9 @@
+with dept
+as 
+(
+select department,avg(salary) as avg_salary from employees
+group by department
+)
+select e.department,e.first_name,e.salary,d.avg_salary
+from employees e join dept d
+on (e.department=d.department);
