@@ -1,0 +1,3 @@
+select first_name from employee
+where target>150
+order by first_name desc;
