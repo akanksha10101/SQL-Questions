@@ -1,0 +1,2 @@
+select * from google_file_store
+where lower(contents) like '%optimism%';
