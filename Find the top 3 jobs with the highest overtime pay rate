@@ -1,0 +1,5 @@
+select Top 3 jobtitle,sum(overtimepay)
+from sf_public_salaries
+group by jobtitle
+order by sum(overtimepay) desc
+;
