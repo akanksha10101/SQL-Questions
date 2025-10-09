@@ -1,0 +1,7 @@
+with rank1 as
+(select salary,
+rank() over (order by salary desc) as rnk
+from worker
+)
+select distinct salary from rank1
+where rnk<=5;
