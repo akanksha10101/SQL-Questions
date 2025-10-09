@@ -1,0 +1,3 @@
+SELECT *
+FROM facebook_posts
+WHERE CHARINDEX('nba', post_keywords) > 0;
