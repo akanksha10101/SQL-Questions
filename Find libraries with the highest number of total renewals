@@ -1,0 +1,3 @@
+select home_library_definition,sum(total_renewals) from library_usage
+group by home_library_definition
+order by sum(total_renewals) desc;
