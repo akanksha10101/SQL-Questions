@@ -1,0 +1,7 @@
+with rank1 as
+(select salary,dense_rank() over (order by salary asc)  as rnk
+from worker
+)
+
+select salary from rank1
+where rnk<=3
