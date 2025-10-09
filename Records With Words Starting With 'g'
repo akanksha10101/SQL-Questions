@@ -1,0 +1,5 @@
+SELECT DISTINCT g.*
+FROM google_word_lists g
+CROSS APPLY STRING_SPLIT(words1, ',') AS w1
+CROSS APPLY STRING_SPLIT(words2, ',') AS w2
+WHERE w1.value LIKE 'g%' OR w2.value LIKE 'g%';
