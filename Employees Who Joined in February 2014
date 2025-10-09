@@ -1,0 +1,2 @@
+select * from worker where 
+format(joining_date,'MMM-yyyy')='Apr-2014';
