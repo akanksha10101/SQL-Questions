@@ -1,0 +1,2 @@
+select hour,AVG(travel_distance) from lyft_rides
+GROUP BY HOUR;
