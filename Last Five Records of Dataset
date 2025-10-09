@@ -1,0 +1,2 @@
+select * from worker
+where worker_id>(select count(*) from worker)-5;
