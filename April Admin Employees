@@ -1,0 +1,4 @@
+SELECT COUNT(*) AS admin_april_or_later
+FROM worker
+WHERE department = 'Admin'
+  AND MONTH(joining_date) >= 4;
