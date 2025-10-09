@@ -1,0 +1,5 @@
+select Top 1 games,count(id)
+from olympics_athletes_events
+where medal is null
+group by games
+order by count(id) desc;
