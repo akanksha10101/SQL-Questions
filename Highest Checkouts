@@ -1,0 +1,4 @@
+select patron_type_code,sum(total_checkouts) from library_usage
+where total_checkouts<10
+group by patron_type_code
+order by sum(total_checkouts) desc;
