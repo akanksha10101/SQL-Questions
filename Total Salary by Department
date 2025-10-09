@@ -1,0 +1,2 @@
+select department,sum(salary) from worker
+group by department;
