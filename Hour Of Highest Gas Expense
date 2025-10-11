@@ -1,0 +1,2 @@
+select top 1 hour,gasoline_cost from lyft_rides
+ORDER BY gasoline_cost DESC;
